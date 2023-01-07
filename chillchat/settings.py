@@ -23,8 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
+<<<<<<< HEAD
 from decouple import config
 SECRET_KEY = config("SECRET_KEY") # this is to replace the secret key you cut away before
+=======
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'django-insecure-3=3odxfdi9u4(lf_q%5dv86so9wq0ghs&9r9%#j4dpr%a^p3x$'
+>>>>>>> fe58f7c9ed42ad5a9cead67a485d36190b87b3d8
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -155,11 +160,19 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Verifing Email Stuff
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+<<<<<<< HEAD
 EMAIL_HOST = ''             # email host
 EMAIL_PORT = ''             # email port
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = ''        # host user email
 EMAIL_HOST_PASSWORD = ''    # host user password
+=======
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'chillchat.yamen@gmail.com' 
+EMAIL_HOST_PASSWORD = 'yamen2000'
+>>>>>>> fe58f7c9ed42ad5a9cead67a485d36190b87b3d8
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
