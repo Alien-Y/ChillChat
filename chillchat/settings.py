@@ -160,19 +160,11 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Verifing Email Stuff
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-<<<<<<< HEAD
 EMAIL_HOST = ''             # email host
 EMAIL_PORT = ''             # email port
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = ''        # host user email
 EMAIL_HOST_PASSWORD = ''    # host user password
-=======
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'chillchat.yamen@gmail.com' 
-EMAIL_HOST_PASSWORD = 'yamen2000'
->>>>>>> fe58f7c9ed42ad5a9cead67a485d36190b87b3d8
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
